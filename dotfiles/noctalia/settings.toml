@@ -191,6 +191,9 @@ mode = "dark"
 source = "community"
 wallpaper_scheme = "m3-content"
 
+    [theme.templates]
+    builtin_ids = [ "alacritty" ]
+
 [wallpaper]
 directory = "/home/ivopiro/Wallpapers/Images"
 directory_dark = "/home/ivopiro/Wallpapers/Images"
