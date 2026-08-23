@@ -1,10 +1,5 @@
 # NixOS dotfiles
 
-## Before installing
-
-Beware of Nvidia shader cache environment variables, specifically the
-size and path. You might want to take a look at [nvidia.nix](./modules/system/nvidia.nix)
-
 ## Installation
 
 To setup NixOS with this configuration, first temporally install git:
