@@ -1,0 +1,30 @@
+# No undervolt
+1830Mhz
+290W
+77°
+
+# Undervolt
+
+## 1980MHz@900mV
+1980MHz
+247W
+73°
+(crashed)
+
+## 1950MHz@900mV <- stable
+1950MHz
+246W
+74°
+
+## 1950MHz@887mV
+1950MHz
+244W
+73°
+
+## 1950MHz@875m
+1950MHz
+237W
+72°
+(crashed)
+
+

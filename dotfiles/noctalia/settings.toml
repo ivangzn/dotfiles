@@ -1,0 +1,240 @@
+config_version = 8
+
+[backdrop]
+enabled = false
+
+[bar.default]
+border_width = 0.5
+center = [ "workspaces" ]
+concave_edge_corners = false
+end = [ "tray", "network", "bluetooth", "notifications", "volume", "clock" ]
+font_family = "CaskaydiaCove Nerd Font Mono"
+hover_highlight = false
+layer = "top"
+margin_edge = 8
+margin_ends = 100
+padding = 24
+panel_overlap = 1
+position = "top"
+radius = 11
+radius_bottom_right = 12
+reserve_space = true
+scale = 1.2000000104308128
+smart_auto_hide = false
+start = [ "session", "wallpaper_2" ]
+thickness = 42
+widget_spacing = 13
+
+    [bar.default.dead_zone.actions]
+    middle = "exec noctalia msg panel-toggle nomadcxx/gslapper:picker"
+
+[calendar]
+enabled = true
+
+    [calendar.account.noctalia_google_calendar]
+    type = "google"
+
+[control_center.calendar]
+show_events_card = true
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "keyboard_layout"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[location]
+address = "Ciudad Autónoma de Buenos Aires"
+
+[lockscreen]
+enabled = false
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@DP-2" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1280.0
+    cy = 1258.0
+    output = "DP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-2"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[osd]
+enabled = false
+
+[plugin_settings."nomadcxx/gslapper"]
+fps_cap = "30"
+hidden_behavior = "none"
+picker_open_near_click = true
+picker_placement = "attached"
+scale = "fill"
+video_directory = "/home/ivopiro/Videos/Wallpapers"
+
+[plugins]
+auto_update = false
+enabled = [ "nomadcxx/gslapper" ]
+
+[shell]
+font_family = "CaskaydiaCove Nerd Font Mono"
+
+    [shell.panel]
+    open_near_click_control_center = true
+    open_near_click_wallpaper = true
+
+    [shell.screen_corners]
+    enabled = true
+    size = 19
+
+    [[shell.session.actions]]
+    action = "lock"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "lock_and_suspend"
+    countdown_seconds = 0.0
+    enabled = false
+    shortcut = "3"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "4"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "5"
+    variant = "destructive"
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Atuel"
+mode = "dark"
+source = "community"
+wallpaper_scheme = "m3-content"
+
+[wallpaper]
+directory = "/home/ivopiro/Wallpapers/Images"
+directory_dark = "/home/ivopiro/Wallpapers/Images"
+directory_light = "/home/ivopiro/Wallpapers/Images"
+
+    [wallpaper.default]
+    path = "/home/ivopiro/Wallpapers/Images/orokin.png"
+
+    [wallpaper.last]
+    path = "/home/ivopiro/Wallpapers/Images/orokin.png"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/ivopiro/Wallpapers/Images/orokin.png"
+
+    [wallpaper.monitors.DP-2]
+    path = "/home/ivopiro/Wallpapers/Images/orokin.png"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/ivopiro/Pictures/Wallpapers/orokin.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+[widget.bluetooth]
+color = "secondary"
+
+[widget.network]
+show_label = false
+
+[widget.notifications]
+icon_color = "hover"
+
+[widget.session]
+color = "error"
+
+[widget.tray]
+drawer = true
+
+[widget.volume]
+color = "primary"
+mute_glyph = "volume-mute"
+show_label = false
+
+[widget.wallpaper_2]
+color = "hover"
+enabled = false
+type = "nomadcxx/gslapper:wallpaper"

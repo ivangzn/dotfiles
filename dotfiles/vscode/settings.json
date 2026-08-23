@@ -1,0 +1,96 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "typescriptreact"
+  ],
+  "terminal.integrated.shell.windows": "D:\\Mis Programas\\Git\\bin\\bash.exe",
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "editor.fontFamily": "'CaskaydiaCove Nerd Font', Consolas",
+  "editor.fontLigatures": true,
+  "editor.inlineSuggest.enabled": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "svelte.enable-ts-plugin": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "javascript.format.semicolons": "insert",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false,
+    "go": false
+  },
+  "[sql]": {
+    "editor.formatOnSave": false
+  },
+  "[markdown]": {
+    "editor.rulers": [
+      80
+    ],
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "javascript.preferences.quoteStyle": "double",
+  "typescript.preferences.quoteStyle": "double",
+  "editor.formatOnSave": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+  "todo-tree.general.statusBar": "total",
+  "todo-tree.highlights.useColourScheme": true,
+  "github.copilot.editor.enableAutoCompletions": false,
+  "editor.fontWeight": "normal",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "s"
+      ],
+      "commands": [
+        "leap.findForward"
+      ]
+    },
+    {
+      "before": [
+        "S"
+      ],
+      "commands": [
+        "leap.findBackward"
+      ]
+    }
+  ],
+  "files.associations": {
+    "LICENSE": "plaintext"
+  },
+  "workbench.colorCustomizations": {
+    "[Halflife Contrast (rainglow)]": {
+      "editorBracketHighlight.foreground1": "#a7da1e",
+      "editorBracketHighlight.foreground2": "#f98526",
+      "editorBracketHighlight.foreground3": "#9d37fc",
+      "editorBracketHighlight.foreground4": "#f85931",
+      "editorBracketHighlight.foreground5": "#f9d423"
+    }
+  },
+  "workbench.colorTheme": "Halflife Contrast (rainglow)"
+}
