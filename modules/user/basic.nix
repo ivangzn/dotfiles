@@ -44,27 +44,11 @@
     enable = true;
   };
 
-  # Social
-  programs.vesktop = {
-    enable = true;
-  };
-
-  home.file.".config/vesktop/themes".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles.dir}/vesktop/themes";
-
   # Video
   programs.mpv = {
     enable = true;
     config = {
       keep-open = true;
     };
-  };
-
-  # Personal
-  programs.obsidian = {
-    enable = true;
-  };
-
-  programs.onlyoffice = {
-    enable = true;
   };
 }
