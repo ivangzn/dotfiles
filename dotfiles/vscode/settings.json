@@ -92,5 +92,6 @@
       "editorBracketHighlight.foreground5": "#f9d423"
     }
   },
-  "workbench.colorTheme": "Halflife Contrast (rainglow)"
+  "workbench.colorTheme": "Halflife Contrast (rainglow)",
+  "todo-tree.ripgrep.ripgrep": "/etc/profiles/per-user/ivopiro/bin/rg"
 }

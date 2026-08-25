@@ -59,4 +59,9 @@ in
   };
 
   home.file.".config/alacritty".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles.dir}/alacritty"; # style
+
+  # Commands
+  programs.ripgrep = {
+    enable = true;
+  };
 }
