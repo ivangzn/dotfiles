@@ -33,6 +33,11 @@ in
   home.file.".config/Code/User/keybindings.json".source = config.lib.file.mkOutOfStoreSymlink "${vscodeDir}/keybindings.json";
   home.file.".config/Code/User/settings.json".source = config.lib.file.mkOutOfStoreSymlink "${vscodeDir}/settings.json";
 
+  # Databases
+  programs.dbeaver = {
+    enable = true;
+  };
+
   # terminal tweaks
   home.sessionVariables = {
     EDITOR = "vim";
