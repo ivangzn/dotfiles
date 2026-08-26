@@ -25,7 +25,7 @@
     "command": "explorer.newFile"
   },
   {
-    "key": "ctrl+\\",
+    "key": "alt+[IntlBackslash]",
     "command": "explorer.newFolder"
   },
   {
