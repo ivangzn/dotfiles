@@ -65,4 +65,10 @@
   services.udisks2 = {
     enable = true;
   };
+
+  # Appimages
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+  };
 }
