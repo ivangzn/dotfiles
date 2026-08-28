@@ -12,6 +12,7 @@
     gparted-full
     gnome-calculator
     vlc
+    trash-cli
 
     # Extra
     inputs.gslapper.packages.${stdenv.hostPlatform.system}.gslapper
