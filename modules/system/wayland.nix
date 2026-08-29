@@ -7,6 +7,7 @@
     nautilus
     alacritty
     xwayland-satellite
+    playerctl
   ];
 
   programs.niri = {
