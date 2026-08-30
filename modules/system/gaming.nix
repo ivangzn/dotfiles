@@ -14,7 +14,7 @@
 
   environment.systemPackages = with pkgs; [
     nvtopPackages.nvidia
-    lutris
+    faugus-launcher
     mangohud
     goverlay
   ];
