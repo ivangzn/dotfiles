@@ -24,6 +24,16 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
+  fileSystems."/mnt/storage" =
+    { device = "/dev/disk/by-uuid/9803fd01-2d59-4b2b-b146-7feda4f4d779";
+      fsType = "ext4";
+      options = [ "defaults" "nofail" "x-systemd.automount" "x-systemd.device-timeout=10s" ];
+    };
+
+  systemd.tmpfiles.rules = [
+    "d /storage 0755 ivopiro users -"
+  ];
+
   swapDevices = [ ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
