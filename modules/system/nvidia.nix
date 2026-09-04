@@ -5,6 +5,9 @@
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
+    extraPackages = with pkgs; [
+      nvidia-vaapi-driver
+    ];
   };
 
   # Load Nvidia driver for Xorg and Wayland
