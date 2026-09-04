@@ -8,6 +8,7 @@
       obs-vaapi
       obs-vkcapture
       wlrobs
+      obs-pipewire-audio-capture
     ];
   };
 }
