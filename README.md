@@ -1,5 +1,10 @@
 # NixOS dotfiles
 
+## 🚩 Disclaimer
+
+Check out the [nvidia cache config](modules/system/nvidia.nix), as it
+defines a directory and the maximum size to store all the cached shaders.
+
 ## Installation
 
 To setup NixOS with this configuration, first temporally install git:
