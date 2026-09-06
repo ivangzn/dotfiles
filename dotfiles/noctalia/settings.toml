@@ -184,6 +184,14 @@ font_family = "CaskaydiaCove Nerd Font Mono"
     shortcut = "5"
     variant = "destructive"
 
+    [[shell.session.actions]]
+    action = "command"
+    command = "systemctl reboot --firmware-setup"
+    countdown_seconds = 5.0
+    enabled = true
+    label = "UEFI"
+    variant = "outline"
+
 [theme]
 builtin = "Noctalia"
 community_palette = "Atuel"
