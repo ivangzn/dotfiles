@@ -17,6 +17,7 @@
     faugus-launcher
     mangohud
     goverlay
+    gamescope
   ];
 
   # Enable GameMode (provides `gamemoderun` and system optimizations for games)
