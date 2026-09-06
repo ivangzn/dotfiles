@@ -39,6 +39,11 @@
     options = "--delete-older-than 14d";
   };
 
+  # Other apps
+  services.flatpak = {
+    enable = true;
+  };
+
   # Audio
   services.pipewire = {
     enable = true;
