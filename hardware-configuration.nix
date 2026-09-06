@@ -30,8 +30,15 @@
       options = [ "defaults" "nofail" "x-systemd.automount" "x-systemd.device-timeout=10s" ];
     };
 
+  fileSystems."/mnt/win-storage" =
+    { device = "/dev/disk/by-uuid/7694F19E94F160D3";
+      fsType = "ntfs";
+      options = [ "defaults" "nofail" "x-systemd.automount" "x-systemd.device-timeout=10s" ];
+    };
+
   systemd.tmpfiles.rules = [
     "d /storage 0755 ivopiro users -"
+    "d /win-storage 0755 ivopiro users -"
   ];
 
   swapDevices = [ ];
