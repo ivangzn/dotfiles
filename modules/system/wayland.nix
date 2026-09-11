@@ -20,6 +20,12 @@
     systemd.enable = true;
   };
 
+  systemd.user.services.noctalia = {
+    serviceConfig = {
+      TimeoutStopSec = "2s";
+    };
+  };
+
   services.displayManager.sddm = {
     wayland.enable = true;
   };
