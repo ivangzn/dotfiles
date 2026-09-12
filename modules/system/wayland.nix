@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -6,7 +6,7 @@
     wl-clipboard
     nautilus
     alacritty
-    xwayland-satellite
+    inputs.nixpkgs-xwayland.legacyPackages.${pkgs.stdenv.hostPlatform.system}.xwayland-satellite
     playerctl
   ];
 
