@@ -29,7 +29,7 @@
     nvidiaSettings = true;
 
     # Select the driver package (stable driver recommended for 3070 Ti / Ampere cards)
-    branch = "stable";
+    branch = "latest";
   };
 
   # Environment variables for Nvidia on Wayland (Niri)
