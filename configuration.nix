@@ -23,6 +23,20 @@
   boot.loader.grub.efiSupport = true;
   boot.loader.grub.useOSProber = true;
   boot.loader.grub.configurationLimit = 5;
+  boot.loader.grub.theme = pkgs.stdenv.mkDerivation {
+    pname = "fallout-grub-theme";
+    version = "2025-12-24";
+    src = pkgs.fetchFromGitHub {
+      owner = "shvchk";
+      repo = "fallout-grub-theme";
+      rev = "b441e25a6d115614dc00ee6d11355d019a4969bf";
+      hash = "sha256-dNRLM9tQjWOyi3s4Q2er5Xn2bpG/yQ/D/+F/lfYXrs8=";
+    };
+    installPhase = ''
+      mkdir -p $out
+      cp -r * $out/
+    '';
+  };
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.timeout = 5;
   boot.kernelPackages = pkgs.linuxPackages_latest; # kernel version
