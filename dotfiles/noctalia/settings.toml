@@ -1,28 +1,41 @@
 config_version = 8
 
+[accessibility]
+high_contrast = false
+
 [backdrop]
+blur_intensity = 0.95999997854232788
 enabled = false
+tint_intensity = 0.28999999351799488
 
 [bar.default]
-border_width = 0.5
+background_opacity = 0.35999999195337296
+border = "on_surface"
+border_width = 0.0
+capsule = false
+capsule_group = []
 center = [ "workspaces" ]
+color = "primary"
 concave_edge_corners = false
-end = [ "tray", "network", "bluetooth", "notifications", "volume", "clock" ]
+contact_shadow = true
+end = [ "tray", "network", "bluetooth", "input_volume", "volume", "notifications", "clock" ]
 font_family = "CaskaydiaCove Nerd Font Mono"
-hover_highlight = false
+font_weight = 400
+hover_highlight = true
 layer = "top"
 margin_edge = 8
-margin_ends = 100
-padding = 24
+margin_ends = 400
+margin_opposite_edge = 0
+padding = 16
 panel_overlap = 1
 position = "top"
 radius = 11
 radius_bottom_right = 12
 reserve_space = true
-scale = 1.2000000104308128
+scale = 1.0000000074505806
+shadow = true
 smart_auto_hide = false
 start = [ "session", "wallpaper_2" ]
-thickness = 42
 widget_spacing = 13
 
     [bar.default.dead_zone.actions]
@@ -139,11 +152,22 @@ auto_update = false
 enabled = [ "nomadcxx/gslapper" ]
 
 [shell]
+app_icon_colorize = false
+button_borders = true
+card_borders = true
 font_family = "CaskaydiaCove Nerd Font Mono"
+niri_overview_type_to_launch_enabled = false
+popup_shadows = true
+
+    [shell.launcher]
+    app_grid = false
+    compact = false
 
     [shell.panel]
+    floating_layer = "overlay"
     open_near_click_control_center = true
     open_near_click_wallpaper = true
+    transparency_mode = "solid"
 
     [shell.screen_corners]
     enabled = true
@@ -192,10 +216,15 @@ font_family = "CaskaydiaCove Nerd Font Mono"
     label = "UEFI"
     variant = "outline"
 
+    [shell.shadow]
+    alpha = 0.99999997764825821
+    direction = "down"
+
 [theme]
 builtin = "Noctalia"
 community_palette = "Atuel"
 mode = "dark"
+pure_black_dark = false
 source = "community"
 wallpaper_scheme = "m3-content"
 
@@ -242,6 +271,7 @@ drawer = true
 
 [widget.volume]
 color = "primary"
+device = "output"
 mute_glyph = "volume-mute"
 show_label = false
 
