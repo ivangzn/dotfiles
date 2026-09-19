@@ -41,6 +41,10 @@
   boot.loader.timeout = 5;
   boot.kernelPackages = pkgs.linuxPackages_latest; # kernel version
 
+  # Hardware firmware & Intel CPU thermal management
+  hardware.enableRedistributableFirmware = true;
+  services.thermald.enable = true;
+
   # Enable networking
   networking.networkmanager.enable = true;
   networking.hostName = "ivo-nixos";
