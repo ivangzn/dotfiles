@@ -18,6 +18,11 @@
     enable = true;
   };
 
+  # Audio effects daemon
+  services.easyeffects = {
+    enable = true;
+  };
+
   # Language
   i18n.inputMethod = {
     enable = true;
