@@ -14,20 +14,20 @@ border = "on_surface"
 border_width = 0.0
 capsule = false
 capsule_group = []
-center = [ "workspaces" ]
+center = [ "clock" ]
 color = "primary"
 concave_edge_corners = false
 contact_shadow = true
-end = [ "tray", "network", "bluetooth", "input_volume", "volume", "notifications", "clock" ]
+end = [ "tray", "network", "bluetooth", "input_volume", "volume", "notifications" ]
 font_family = "CaskaydiaCove Nerd Font Mono"
 font_weight = 400
 hover_highlight = true
 layer = "top"
 margin_edge = 8
-margin_ends = 400
+margin_ends = 500
 margin_opposite_edge = 0
-padding = 16
-panel_overlap = 1
+padding = 18
+panel_overlap = 0
 position = "top"
 radius = 11
 radius_bottom_right = 12
@@ -36,7 +36,7 @@ scale = 1.0000000074505806
 shadow = true
 smart_auto_hide = false
 start = [ "session", "wallpaper_2" ]
-widget_spacing = 13
+widget_spacing = 12
 
     [bar.default.dead_zone.actions]
     middle = "exec noctalia msg panel-toggle nomadcxx/gslapper:picker"
@@ -164,10 +164,14 @@ popup_shadows = true
     compact = false
 
     [shell.panel]
+    borders = true
     floating_layer = "overlay"
+    floating_offset = 8
+    list_item_background = false
     open_near_click_control_center = true
     open_near_click_wallpaper = true
-    transparency_mode = "solid"
+    shadow = true
+    transparency_mode = "glass"
 
     [shell.screen_corners]
     enabled = true
@@ -257,6 +261,11 @@ directory_light = "/home/ivopiro/Wallpapers/Images"
 [widget.bluetooth]
 color = "secondary"
 
+[widget.clock]
+capsule_fill = "primary"
+capsule_radius = "auto"
+font_weight = 700
+
 [widget.network]
 show_label = false
 
@@ -279,3 +288,7 @@ show_label = false
 color = "hover"
 enabled = false
 type = "nomadcxx/gslapper:wallpaper"
+
+[widget.workspaces]
+display = "id"
+hide_when_empty = true
