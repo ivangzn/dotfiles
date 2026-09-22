@@ -25,6 +25,10 @@ in
     };
   };
 
+  programs.tmux = {
+    enable = true;
+  };
+
   # Visual Studio Code
   programs.vscode = {
     enable = true;
