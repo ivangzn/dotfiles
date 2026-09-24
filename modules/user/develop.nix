@@ -12,6 +12,15 @@ in
     enable = true;
   };
 
+  home.packages = with pkgs; [
+    gopls
+    delve
+  ];
+
+  home.sessionPath = [
+    "$HOME/go/bin"
+  ];
+
   programs.npm = {
     enable = true;
   };
@@ -28,6 +37,12 @@ in
   programs.tmux = {
     enable = true;
   };
+
+  programs.helix = {
+    enable = true;
+  };
+
+  home.file.".config/helix".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles.dir}/helix";
 
   # Visual Studio Code
   programs.vscode = {

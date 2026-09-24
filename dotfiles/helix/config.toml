@@ -1,0 +1,9 @@
+theme = "vim_dark_high_contrast"
+
+[editor]
+line-number = "relative"
+bufferline = "always"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-absolute-path", "diagnostics"]
+right = ["file-type", "file-encoding", "position"]
