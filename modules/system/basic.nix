@@ -13,6 +13,7 @@
     gnome-calculator
     vlc
     trash-cli
+    qimgv
 
     # Audio
     pavucontrol
