@@ -1,4 +1,4 @@
-theme = "vim_dark_high_contrast"
+theme = "ayu_mirage"
 
 [editor]
 line-number = "relative"
@@ -7,3 +7,11 @@ bufferline = "always"
 [editor.statusline]
 left = ["mode", "spinner", "file-absolute-path", "diagnostics"]
 right = ["file-type", "file-encoding", "position"]
+
+[keys.normal.g]
+"u" = "switch_to_lowercase"
+"U" = "switch_to_uppercase"
+
+[keys.select.g]
+"u" = "switch_to_lowercase"
+"U" = "switch_to_uppercase"
