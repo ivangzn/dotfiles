@@ -38,6 +38,11 @@ in
 
   programs.tmux = {
     enable = true;
+    terminal = "tmux-256color";
+    extraConfig = ''
+      set -as terminal-features ',*:RGB'
+      set -as terminal-overrides ',*:Tc'
+    '';
   };
 
   programs.helix = {
