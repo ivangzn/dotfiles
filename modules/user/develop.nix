@@ -13,7 +13,9 @@ in
   };
 
   home.packages = with pkgs; [
+    gcc
     gopls
+    gotools
     delve
   ];
 
