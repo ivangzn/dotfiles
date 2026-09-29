@@ -36,6 +36,13 @@ in
     };
   };
 
+  programs.delta = {
+    enable = true;
+    options = {
+      line-numbers = true;
+    };
+  };
+
   programs.tmux = {
     enable = true;
     keyMode = "vi";
