@@ -84,6 +84,11 @@
           }
         ];
       };
+      "50-bluetooth-no-autoswitch" = {
+        "wireplumber.settings" = {
+          "bluetooth.autoswitch-to-headset-profile" = false;
+        };
+      };
     };
   };
 
