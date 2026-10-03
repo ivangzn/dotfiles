@@ -13,6 +13,7 @@
     # Extra
     gslapper.url = "github:Nomadcxx/gSlapper"; # live wallpapers
     nixpkgs-xwayland.url = "github:nixos/nixpkgs/edfd59b795cd752c36d2dae60870cffcd23d3fb1"; # xwayland-satellite v0.8.2 menus disappearing bug workaround
+    hytale-launcher.url = "github:JPyke3/hytale-launcher-nix/d1685428dc727283d0aaad24d17fb6d677a4643b"; # hytale has no official package yet
   };
 
   outputs = inputs@{nixpkgs, home-manager, ...}: 

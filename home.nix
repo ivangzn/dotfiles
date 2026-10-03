@@ -8,6 +8,7 @@
     ./modules/user/wayland.nix
     ./modules/user/art.nix
     ./modules/user/misc.nix
+    ./modules/user/community.nix
   ];
 
   home.stateVersion = "26.05";
