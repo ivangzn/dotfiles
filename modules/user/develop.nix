@@ -13,10 +13,13 @@ in
   };
 
   home.packages = with pkgs; [
+    # Go
     gcc
     gopls
     gotools
     delve
+    # Java
+    jdt-language-server
   ];
 
   home.sessionPath = [
