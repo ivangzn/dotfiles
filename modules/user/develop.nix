@@ -12,6 +12,11 @@ in
     enable = true;
   };
 
+  programs.java = {
+    enable = true;
+    package = pkgs.jdk25;
+  };
+
   home.packages = with pkgs; [
     # Go
     gcc
@@ -20,6 +25,8 @@ in
     delve
     # Java
     jdt-language-server
+    gradle
+    maven
   ];
 
   home.sessionPath = [
