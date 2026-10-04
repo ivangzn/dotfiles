@@ -16,7 +16,6 @@
     nvtopPackages.nvidia
     faugus-launcher
     mangohud
-    goverlay
     gamescope
   ];
 

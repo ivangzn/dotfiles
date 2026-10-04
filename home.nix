@@ -7,6 +7,7 @@
     ./modules/user/gdrive.nix
     ./modules/user/wayland.nix
     ./modules/user/art.nix
+    ./modules/user/gaming.nix
     ./modules/user/misc.nix
     ./modules/user/community.nix
   ];
