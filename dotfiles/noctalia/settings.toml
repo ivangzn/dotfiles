@@ -1,4 +1,4 @@
-config_version = 8
+config_version = 14
 
 [accessibility]
 high_contrast = false
@@ -92,6 +92,8 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@DP-2" ]
     cx = 1280.0
     cy = 1258.0
     output = "DP-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
     rotation = 0.0
     type = "login_box"
 
@@ -117,6 +119,8 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@DP-2" ]
     cx = 960.0
     cy = 898.0
     output = "DP-2"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
 
@@ -148,8 +152,8 @@ scale = "fill"
 video_directory = "/home/ivopiro/Videos/Wallpapers"
 
 [plugins]
-auto_update = false
-enabled = [ "nomadcxx/gslapper" ]
+auto_update = "none"
+enabled = []
 
 [shell]
 app_icon_colorize = false
@@ -225,7 +229,7 @@ popup_shadows = true
     direction = "down"
 
 [theme]
-builtin = "Noctalia"
+builtin = "Ayu"
 community_palette = "Atuel"
 mode = "dark"
 pure_black_dark = false
@@ -236,21 +240,21 @@ wallpaper_scheme = "m3-content"
     builtin_ids = [ "alacritty" ]
 
 [wallpaper]
-directory = "/home/ivopiro/Wallpapers/Images"
-directory_dark = "/home/ivopiro/Wallpapers/Images"
-directory_light = "/home/ivopiro/Wallpapers/Images"
+directory = "/home/ivopiro/Pictures/Wallpapers"
+directory_dark = ""
+directory_light = ""
 
     [wallpaper.default]
-    path = "/home/ivopiro/Wallpapers/Images/orokin.png"
+    path = "/home/ivopiro/Pictures/Wallpapers/eldenring-wallpaper.jpg"
 
     [wallpaper.last]
-    path = "/home/ivopiro/Wallpapers/Images/orokin.png"
+    path = "/home/ivopiro/Pictures/Wallpapers/eldenring-wallpaper.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ivopiro/Wallpapers/Images/orokin.png"
+    path = "/home/ivopiro/Pictures/Wallpapers/eldenring-wallpaper.jpg"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/ivopiro/Wallpapers/Images/orokin.png"
+    path = "/home/ivopiro/Pictures/Wallpapers/eldenring-wallpaper.jpg"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
@@ -290,5 +294,5 @@ enabled = false
 type = "nomadcxx/gslapper:wallpaper"
 
 [widget.workspaces]
-display = "id"
 hide_when_empty = true
+label_source = "id"
