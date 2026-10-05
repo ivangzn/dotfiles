@@ -15,6 +15,7 @@
     vlc
     trash-cli
     qimgv
+    cobang
 
     # Audio
     pavucontrol
