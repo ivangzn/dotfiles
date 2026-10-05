@@ -7,5 +7,6 @@
 
   environment.systemPackages = with pkgs; [
     docker-compose
+    intellij-idea
   ];
 }
