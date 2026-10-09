@@ -2,3 +2,16 @@
 name = "go"
 auto-format = true
 formatter = { command = "goimports" }
+
+[[language]]
+name = "java"
+language-servers = [ "jdtls" ]
+indent = { tab-width = 4, unit = "    " }
+
+[language-server.jdtls]
+command = "jdtls-wrapper"
+timeout = 120
+
+[language-server.jdtls.config]
+java.inlayHints.parameterNames.enabled = "all"
+extendedClientCapabilities.classFileContentsSupport = true
