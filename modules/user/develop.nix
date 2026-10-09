@@ -24,7 +24,7 @@ in
     gotools
     delve
     # Java
-    jdt-language-server
+    (jdt-language-server.override { jdk = pkgs.jdk25; })
     gradle
     maven
   ];
