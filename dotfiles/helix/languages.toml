@@ -7,9 +7,11 @@ formatter = { command = "goimports" }
 name = "java"
 language-servers = [ "jdtls" ]
 indent = { tab-width = 4, unit = "    " }
+auto-format = true
 
 [language-server.jdtls]
 command = "jdtls-wrapper"
+args = [ "-data", "/home/ivopiro/.cache/jdtls/workspace" ]
 timeout = 120
 
 [language-server.jdtls.config]
