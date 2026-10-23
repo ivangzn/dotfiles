@@ -23,6 +23,9 @@
     pavucontrol
     qpwgraph
 
+    # Video
+    parabolic
+
     # Extra
     inputs.gslapper.packages.${stdenv.hostPlatform.system}.gslapper
     socat
@@ -123,5 +126,10 @@
   programs.appimage = {
     enable = true;
     binfmt = true;
+  };
+
+  # File transfer
+  programs.localsend = {
+    enable = true;
   };
 }
