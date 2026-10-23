@@ -104,6 +104,11 @@ in
 
   home.file.".config/alacritty".source = config.lib.file.mkOutOfStoreSymlink "${dotfiles.dir}/alacritty"; # style
 
+  # IA
+  programs.herdr = {
+    enable = true;
+  };
+
   # Commands
   programs.ripgrep = {
     enable = true;
