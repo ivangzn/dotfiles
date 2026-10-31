@@ -23,7 +23,7 @@
 
     # Use the NVidia open source kernel module (not to be confused with nouveau).
     # Set false for modern desktop cards (e.g. RTX 3070 Ti) if experiencing issues with open module.
-    open = true;
+    open = false;
 
     # Enable the Nvidia settings menu
     nvidiaSettings = true;
