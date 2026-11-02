@@ -132,4 +132,14 @@
   programs.localsend = {
     enable = true;
   };
+
+  # Default terminal execution
+  xdg = {
+    terminal-exec = {
+      enable = true;
+      settings = {
+        default = [ "Alacritty.desktop" ];
+      };
+    };
+  };
 }
