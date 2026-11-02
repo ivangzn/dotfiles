@@ -8,6 +8,7 @@
     alacritty
     inputs.nixpkgs-xwayland.legacyPackages.${pkgs.stdenv.hostPlatform.system}.xwayland-satellite
     playerctl
+    nirimod
   ];
 
   programs.niri = {
