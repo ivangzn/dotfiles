@@ -9,7 +9,7 @@ enabled = false
 tint_intensity = 0.28999999351799488
 
 [bar.default]
-background_opacity = 0.35999999195337296
+background_opacity = 0.47999998927116394
 border = "on_surface"
 border_width = 0.0
 capsule = false
@@ -20,22 +20,25 @@ concave_edge_corners = false
 contact_shadow = true
 end = [ "tray", "network", "bluetooth", "volume", "notifications" ]
 font_family = "CaskaydiaCove Nerd Font Mono"
+font_scale = 0.99999998509883881
 font_weight = 400
 hover_highlight = true
 layer = "top"
-margin_edge = 8
-margin_ends = 500
+margin_edge = 16
+margin_ends = 1200
 margin_opposite_edge = 0
 padding = 18
 panel_overlap = 0
 position = "top"
 radius = 11
 radius_bottom_right = 12
-reserve_space = true
-scale = 1.0000000074505806
+reserve_space = false
+scale = 1.5000000149011612
 shadow = true
-smart_auto_hide = false
+show_on_workspace_switch = true
+smart_auto_hide = true
 start = [ "session", "wallpaper_2" ]
+thickness = 65
 widget_spacing = 12
 
     [bar.default.dead_zone.actions]
@@ -89,11 +92,11 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@DP-2" ]
     [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
     box_height = 196.0
     box_width = 810.0
-    cx = 1280.0
+    cx = 2560.0
     cy = 1258.0
     output = "DP-1"
     placement_height = 1440.0
-    placement_width = 2560.0
+    placement_width = 5120.0
     rotation = 0.0
     type = "login_box"
 
@@ -169,6 +172,7 @@ popup_shadows = true
 
     [shell.panel]
     borders = true
+    control_center_placement = "attached"
     floating_layer = "overlay"
     floating_offset = 8
     list_item_background = false
@@ -245,13 +249,13 @@ directory_dark = ""
 directory_light = ""
 
     [wallpaper.default]
-    path = "/home/ivopiro/Pictures/Wallpapers/eldenring-wallpaper.jpg"
+    path = "/home/ivopiro/Pictures/Wallpapers/8951938.jpg"
 
     [wallpaper.last]
-    path = "/home/ivopiro/Pictures/Wallpapers/eldenring-wallpaper.jpg"
+    path = "/home/ivopiro/Pictures/Wallpapers/8951938.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ivopiro/Pictures/Wallpapers/eldenring-wallpaper.jpg"
+    path = "/home/ivopiro/Pictures/Wallpapers/8951938.jpg"
 
     [wallpaper.monitors.DP-2]
     path = "/home/ivopiro/Pictures/Wallpapers/eldenring-wallpaper.jpg"

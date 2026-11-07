@@ -8,6 +8,12 @@
 workspace "discord" {
     open-on-output "DP-2"
 }
+window-rule {
+    geometry-corner-radius 6
+    clip-to-geometry true
+}
+environment
+
 
 // Input device configuration.
 // Find the full list of options on the wiki:
@@ -52,7 +58,7 @@ input {
     mouse {
         // off
         // natural-scroll
-        accel-speed 0.30
+        accel-speed 0.3
         accel-profile "flat"
         // scroll-method "no-scroll"
     }
@@ -117,8 +123,8 @@ output "DP-2" {
 
 // LG Electronics LG ULTRAGEAR 407NTDV3E434
 output "DP-1" {
-    mode "2560x1440@143.973"
-    position x=1920 y=0
+    mode "5120x1440@143.984"
+    position x=0 y=0
     variable-refresh-rate on-demand=true
 }
 
@@ -331,8 +337,9 @@ window-rule {
     // This regular expression is intentionally made as specific as possible,
     // since this is the default config, and we want no false positives.
     // You can get away with just app-id="wezterm" if you want.
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
+    match app-id=r"^org\.wezfurlong\.wezterm$"
+    default-column-width {
+    }
 }
 
 // Open the Firefox picture-in-picture player as floating by default.
@@ -340,15 +347,15 @@ window-rule {
     // This app-id regular expression will work for both:
     // - host Firefox (app-id is "firefox")
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    match app-id=r"firefox$" title="^Picture-in-Picture$"
     open-floating true
 }
 
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
-    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+    match app-id=r"^org\.keepassxc\.KeePassXC$"
+    match app-id=r"^org\.gnome\.World\.Secrets$"
 
     block-out-from "screen-capture"
 
@@ -356,47 +363,25 @@ window-rule {
     // block-out-from "screencast"
 }
 
-// Example: enable rounded corners for all windows.
-// (This example rule is commented out with a "/-" in front.)
 window-rule {
-    geometry-corner-radius 12
-    clip-to-geometry true
-}
-
-// Open browser in second monitor.
-window-rule {
-  match app-id="brave-browser"
-  match app-id="firefox"
-
-  open-on-output "DP-2"
-  open-maximized true
-}
-
-window-rule {
-  match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+  match app-id="steam" title=r"^notificationtoasts_\d+_desktop$"
   default-floating-position x=10 y=10 relative-to="bottom-right"
   open-focused false
 }
 
 // Enable VRR for Steam games (Proton and Steam native games launch with app-id "steam_app_<id>")
 window-rule {
-    match app-id=r#"^steam_app_"#
+    match app-id=r"^steam_app_"
     variable-refresh-rate true
 }
 
 window-rule {
-    match app-id=r#"^kwalletd6?$"#
-    match app-id=r#"^org\.kde\.kwalletd6?$"#
+    match app-id=r"^kwalletd6?$"
+    match app-id=r"^org\.kde\.kwalletd6?$"
     match app-id="ksecretd"
     match title="Unlock Wallet"
     match title="KWallet"
     open-floating true
-}
-
-window-rule {
-    match app-id="vesktop"
-    open-on-workspace "discord"
-    open-maximized true
 }
 
 window-rule {
@@ -451,15 +436,15 @@ binds {
     // "-l 1.0" limits the volume to 100%.
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
-    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+    XF86AudioMute allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
+    XF86AudioMicMute allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
 
     // Example media keys mapping using playerctl.
     // This will work with any MPRIS-enabled media player.
-    XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
-    XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
-    XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
-    XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
+    XF86AudioPlay allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    XF86AudioStop allow-when-locked=true { spawn-sh "playerctl stop"; }
+    XF86AudioPrev allow-when-locked=true { spawn-sh "playerctl previous"; }
+    XF86AudioNext allow-when-locked=true { spawn-sh "playerctl next"; }
 
     // Example brightness key mappings for brightnessctl.
     // You can use regular spawn with multiple arguments too (to avoid going through "sh"),
@@ -553,10 +538,10 @@ binds {
     // To avoid scrolling through workspaces really fast, you can use
     // the cooldown-ms property. The bind will be rate-limited to this value.
     // You can set a cooldown on any bind, but it's most useful for the wheel.
-    Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
-    Mod+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
+    Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
+    Mod+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
     Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
-    Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
+    Mod+Ctrl+WheelScrollUp cooldown-ms=150 { move-column-to-workspace-up; }
 
     Mod+WheelScrollRight      { focus-column-right; }
     Mod+WheelScrollLeft       { focus-column-left; }
@@ -705,6 +690,7 @@ binds {
 
     Mod+A { spawn "firefox"; }
     Mod+Z { spawn "vesktop"; }
+    Mod+G { set-column-width "2560"; }
 }
 
 
