@@ -10,6 +10,7 @@
     extraCompatPackages = with pkgs; [
       proton-ge-bin
     ];
+    protontricks.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
@@ -18,6 +19,7 @@
     mangohud
     gamescope
   ];
+
 
   # Enable GameMode (provides `gamemoderun` and system optimizations for games)
   programs.gamemode = {
