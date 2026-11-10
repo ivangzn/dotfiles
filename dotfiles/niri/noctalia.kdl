@@ -10,6 +10,8 @@ layout {
         active-color "#c4b28a"
         inactive-color "#1f1f28"
         urgent-color "#c4746e"
+
+        width 4
     }
 
     shadow {
@@ -25,8 +27,10 @@ layout {
     insert-hint {
         color "#c4b28a80"
     }
-    preset-column-widths { proportion 0.25; proportion 0.333; proportion 0.5; }
+    preset-column-widths { proportion 0.247; proportion 0.333; proportion 0.5; }
     default-column-width { proportion 0.25; }
+    gaps 16
+    struts
 }
 
 recent-windows {

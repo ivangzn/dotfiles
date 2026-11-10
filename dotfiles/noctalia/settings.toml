@@ -9,7 +9,7 @@ enabled = false
 tint_intensity = 0.28999999351799488
 
 [bar.default]
-background_opacity = 0.47999998927116394
+background_opacity = 0.72999998368322849
 border = "on_surface"
 border_width = 0.0
 capsule = false
@@ -25,7 +25,7 @@ font_weight = 400
 hover_highlight = true
 layer = "top"
 margin_edge = 16
-margin_ends = 1200
+margin_ends = 1440
 margin_opposite_edge = 0
 padding = 18
 panel_overlap = 0
@@ -33,12 +33,12 @@ position = "top"
 radius = 11
 radius_bottom_right = 12
 reserve_space = false
-scale = 1.5000000149011612
+scale = 1.300000011920929
 shadow = true
 show_on_workspace_switch = true
 smart_auto_hide = true
 start = [ "session", "wallpaper_2" ]
-thickness = 65
+thickness = 50
 widget_spacing = 12
 
     [bar.default.dead_zone.actions]
@@ -72,6 +72,11 @@ widget_order = []
     visible = true
 
     [desktop_widgets.widget]
+
+[dock]
+active_monitor_only = false
+enabled = false
+smart_auto_hide = false
 
 [location]
 address = "Ciudad Autónoma de Buenos Aires"
@@ -234,7 +239,7 @@ popup_shadows = true
 
 [theme]
 builtin = "Ayu"
-community_palette = "Atuel"
+community_palette = "Zenbones"
 mode = "dark"
 pure_black_dark = false
 source = "community"
@@ -247,15 +252,16 @@ wallpaper_scheme = "m3-content"
 directory = "/home/ivopiro/Pictures/Wallpapers"
 directory_dark = ""
 directory_light = ""
+fill_mode = "crop"
 
     [wallpaper.default]
-    path = "/home/ivopiro/Pictures/Wallpapers/8951938.jpg"
+    path = "/home/ivopiro/Pictures/Wallpapers/radahn.jpg"
 
     [wallpaper.last]
-    path = "/home/ivopiro/Pictures/Wallpapers/8951938.jpg"
+    path = "/home/ivopiro/Pictures/Wallpapers/radahn.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ivopiro/Pictures/Wallpapers/8951938.jpg"
+    path = "/home/ivopiro/Pictures/Wallpapers/radahn.jpg"
 
     [wallpaper.monitors.DP-2]
     path = "/home/ivopiro/Pictures/Wallpapers/eldenring-wallpaper.jpg"
