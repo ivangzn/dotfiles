@@ -239,7 +239,7 @@ popup_shadows = true
 
 [theme]
 builtin = "Ayu"
-community_palette = "Zenbones"
+community_palette = "Jiva"
 mode = "dark"
 pure_black_dark = false
 source = "community"
@@ -255,13 +255,13 @@ directory_light = ""
 fill_mode = "crop"
 
     [wallpaper.default]
-    path = "/home/ivopiro/Pictures/Wallpapers/radahn.jpg"
+    path = "/home/ivopiro/Pictures/Wallpapers/dpixel.jpg"
 
     [wallpaper.last]
-    path = "/home/ivopiro/Pictures/Wallpapers/radahn.jpg"
+    path = "/home/ivopiro/Pictures/Wallpapers/dpixel.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ivopiro/Pictures/Wallpapers/radahn.jpg"
+    path = "/home/ivopiro/Pictures/Wallpapers/dpixel.jpg"
 
     [wallpaper.monitors.DP-2]
     path = "/home/ivopiro/Pictures/Wallpapers/eldenring-wallpaper.jpg"
