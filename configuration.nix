@@ -11,7 +11,8 @@
       ./modules/system/basic.nix
       ./modules/system/develop.nix
       ./modules/system/gaming.nix
-      ./modules/system/nvidia.nix
+      # ./modules/system/nvidia.nix # Current: Nvidia RTX 3070 Ti
+      ./modules/system/amd.nix   # Future: AMD Radeon RX 9070 XT (swap when card is installed)
       ./modules/system/wayland.nix
       ./modules/system/art.nix
     ];

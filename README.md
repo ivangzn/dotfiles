@@ -2,8 +2,27 @@
 
 ## 🚩 Disclaimer
 
-Check out the [nvidia cache config](modules/system/nvidia.nix), as it
-defines a directory and the maximum size to store all the cached shaders.
+Check out the GPU shader cache configuration:
+- Nvidia: [modules/system/nvidia.nix](modules/system/nvidia.nix) stores cached shaders at `/mnt/storage/cache/nvidia`.
+- AMD: [modules/system/amd.nix](modules/system/amd.nix) stores cached shaders at `/mnt/storage/cache/mesa`.
+
+### Switching GPU (Nvidia ➔ AMD)
+
+In [configuration.nix](configuration.nix), comment out `./modules/system/nvidia.nix` and uncomment `./modules/system/amd.nix`:
+
+```nix
+imports = [
+  ...
+  # ./modules/system/nvidia.nix
+  ./modules/system/amd.nix
+  ...
+];
+```
+
+Then rebuild the system:
+```sh
+rebuild
+```
 
 ## Installation
 

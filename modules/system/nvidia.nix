@@ -1,6 +1,18 @@
 { config, pkgs, ... }:
 
 {
+  # Package overrides for NVENC and CUDA support
+  nixpkgs.overlays = [
+    (final: prev: {
+      handbrake = prev.handbrake.overrideAttrs (old: {
+        nativeBuildInputs = (old.nativeBuildInputs or [ ]) ++ [ prev.autoAddDriverRunpath ];
+      });
+      obs-studio = prev.obs-studio.override {
+        cudaSupport = true;
+      };
+    })
+  ];
+
   # Enable OpenGL / Hardware Acceleration
   hardware.graphics = {
     enable = true;

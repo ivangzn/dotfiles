@@ -1,6 +1,14 @@
 
 
 window-rule { match app-id=r"^Alacritty$"; opacity 1.0; background-effect { blur true; }; }
+output "DP-3" {
+    mode "5120x1440@143.984"
+
+    scale 1.0
+
+    transform "normal"
+    position x=0 y=0
+}
 window-rule { match app-id=r"loftia-win64-shipping.exe"; open-fullscreen false; clip-to-geometry true; max-width 2560; max-height 1440; }
 blur {
     offset 1.7999999999999998

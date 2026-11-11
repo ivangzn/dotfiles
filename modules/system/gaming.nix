@@ -14,7 +14,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    nvtopPackages.nvidia
+    nvtopPackages.full
     faugus-launcher
     mangohud
     gamescope
@@ -29,10 +29,6 @@
       general = {
         softrealtime = "auto";
         renice = 10;
-      };
-      gpu = {
-        apply_gpu_optimizations = "accept-responsibility";
-        nv_powermizer_mode = 1;
       };
     };
   };
