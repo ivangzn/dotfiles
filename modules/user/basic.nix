@@ -34,17 +34,18 @@
     ];
   };
 
-  # Set Super+Space as the toggle hotkey
+  # Super+Space to switch layouts
   xdg.configFile."fcitx5/config".text = ''
     [Hotkey]
     TriggerKeys=
-    0=Super+space
 
     [Hotkey/TriggerKeys]
+
+    [Hotkey/EnumerateForwardKeys]
     0=Super+space
   '';
 
-  # Set your active layout profile
+  # Languages
   xdg.configFile."fcitx5/profile".text = ''
     [Groups/0]
     Name=Default
@@ -56,6 +57,10 @@
     Layout=
 
     [Groups/0/Items/1]
+    Name=keyboard-us-altgr-intl
+    Layout=
+
+    [Groups/0/Items/2]
     Name=mozc
     Layout=
 
