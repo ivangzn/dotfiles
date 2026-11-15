@@ -18,6 +18,7 @@
     trash-cli
     qimgv
     cobang
+    gnome-disk-utility
 
     # Audio
     pavucontrol

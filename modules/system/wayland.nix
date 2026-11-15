@@ -6,7 +6,7 @@
     wl-clipboard
     nautilus
     alacritty
-    inputs.nixpkgs-xwayland.legacyPackages.${pkgs.stdenv.hostPlatform.system}.xwayland-satellite
+    xwayland-satellite
     playerctl
     nirimod
   ];
