@@ -1,7 +1,10 @@
 
 
 window-rule { match app-id=r"^Alacritty$"; opacity 1.0; background-effect { blur true; }; }
+window-rule { draw-border-with-background false; clip-to-geometry true; }
 output "DP-3" {
+    variable-refresh-rate
+
     mode "5120x1440@143.984"
 
     scale 1.0
@@ -18,11 +21,6 @@ blur {
     saturation 0.7000000000000001
 
     passes 2
-}
-window-rule {
-    geometry-corner-radius 6
-    clip-to-geometry true
-    draw-border-with-background false
 }
 environment
 
@@ -368,6 +366,7 @@ debug {
 }
 
 binds {
+    
     
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program
