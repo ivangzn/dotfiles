@@ -23,10 +23,14 @@ in
     gopls
     gotools
     delve
+
     # Java
     (jdt-language-server.override { jdk = pkgs.jdk25; })
     gradle
     maven
+
+    # AI
+    jan
   ];
 
   home.sessionPath = [
