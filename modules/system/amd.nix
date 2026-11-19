@@ -44,6 +44,10 @@
     # Force RADV (Mesa Vulkan driver for AMD)
     AMD_VULKAN_ICD = "RADV";
 
+    # SDL: prefer Wayland natively with X11 fallback
+    SDL_VIDEO_DRIVER = "wayland,x11";
+    SDL_VIDEODRIVER = "wayland,x11";
+
     # Ensure ROCm / HIP devices are detected
     ROC_ENABLE_PRE_VEGA = "0";
   };

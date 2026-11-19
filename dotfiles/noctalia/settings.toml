@@ -1,7 +1,10 @@
-config_version = 14
+config_version = 20
 
 [accessibility]
 high_contrast = false
+
+[audio]
+colorize_icons = false
 
 [backdrop]
 blur_intensity = 0.95999997854232788
@@ -75,6 +78,7 @@ widget_order = []
 
 [dock]
 active_monitor_only = false
+colorize_icons = false
 enabled = false
 smart_auto_hide = false
 
@@ -106,7 +110,7 @@ widget_order = [ "lockscreen-login-box@DP-3", "lockscreen-login-box@DP-1", "lock
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -117,6 +121,8 @@ widget_order = [ "lockscreen-login-box@DP-3", "lockscreen-login-box@DP-1", "lock
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -133,7 +139,7 @@ widget_order = [ "lockscreen-login-box@DP-3", "lockscreen-login-box@DP-1", "lock
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -144,6 +150,8 @@ widget_order = [ "lockscreen-login-box@DP-3", "lockscreen-login-box@DP-1", "lock
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -160,7 +168,7 @@ widget_order = [ "lockscreen-login-box@DP-3", "lockscreen-login-box@DP-1", "lock
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-3".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -171,9 +179,14 @@ widget_order = [ "lockscreen-login-box@DP-3", "lockscreen-login-box@DP-1", "lock
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_media_controls = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
+
+[notification]
+colorize_icons = false
 
 [osd]
 enabled = false
@@ -191,15 +204,17 @@ auto_update = "none"
 enabled = []
 
 [shell]
-app_icon_colorize = false
 button_borders = true
 card_borders = true
 font_family = "CaskaydiaCove Nerd Font Mono"
 niri_overview_type_to_launch_enabled = false
+polkit_colorize_icons = false
 popup_shadows = true
+screen_time_colorize_icons = false
 
     [shell.launcher]
     app_grid = false
+    colorize_icons = false
     compact = false
 
     [shell.panel]
@@ -264,6 +279,9 @@ popup_shadows = true
     alpha = 0.99999997764825821
     direction = "down"
 
+    [shell.window_switcher]
+    colorize_icons = false
+
 [theme]
 builtin = "Ayu"
 community_palette = "Jiva"
@@ -299,6 +317,9 @@ fill_mode = "crop"
     theme_mode = "dark"
     wallpaper_scheme = "m3-content"
 
+[widget.active_window]
+colorize_icons = false
+
 [widget.bluetooth]
 color = "secondary"
 
@@ -316,7 +337,11 @@ icon_color = "hover"
 [widget.session]
 color = "error"
 
+[widget.taskbar]
+colorize_icons = false
+
 [widget.tray]
+colorize_icons = false
 drawer = true
 
 [widget.volume]
@@ -331,5 +356,6 @@ enabled = false
 type = "nomadcxx/gslapper:wallpaper"
 
 [widget.workspaces]
+colorize_icons = false
 hide_when_empty = true
 label_source = "id"

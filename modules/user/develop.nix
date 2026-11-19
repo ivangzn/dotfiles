@@ -25,7 +25,7 @@ in
     delve
 
     # Java
-    (jdt-language-server.override { jdk = pkgs.jdk25; })
+    jdt-language-server
     gradle
     maven
 
