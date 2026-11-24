@@ -49,15 +49,15 @@
   xdg.configFile."fcitx5/profile".text = ''
     [Groups/0]
     Name=Default
-    Default Layout=latam
-    DefaultIM=mozc
+    Default Layout=us-altgr-intl
+    DefaultIM=us-altgr-intl
 
     [Groups/0/Items/0]
-    Name=keyboard-latam
+    Name=keyboard-us-altgr-intl
     Layout=
 
     [Groups/0/Items/1]
-    Name=keyboard-us-altgr-intl
+    Name=keyboard-latam
     Layout=
 
     [Groups/0/Items/2]
