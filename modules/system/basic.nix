@@ -112,6 +112,11 @@
     };
   };
 
+  # Keychron WebHID access (launcher.keychron.com)
+  services.udev.extraRules = ''
+    KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3434", MODE="0660", GROUP="users"
+  '';
+
   # Login
   services.displayManager.sddm = {
     enable = true;
