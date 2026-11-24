@@ -9,6 +9,7 @@
     git
     btop
     firefox
+    google-chrome
     fastfetch
     ncdu
     baobab
