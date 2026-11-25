@@ -671,7 +671,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Q hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
-    Mod+Shift+Return hotkey-overlay-title="Open a Terminal in CWD: alacritty" { spawn-sh "pid=$(niri msg focused-window | awk '/App ID: \"Alacritty\"/{ok=1} ok && /PID:/{print $2; exit}'); cwd=$(readlink \"/proc/$(pgrep -P \"$pid\" 2>/dev/null | head -n1)/cwd\" 2>/dev/null); alacritty --working-directory \"${cwd:-$HOME}\""; }
+    Mod+Return hotkey-overlay-title="Open a Terminal in CWD: alacritty" { spawn-sh "pid=$(niri msg focused-window | awk '/App ID: \"Alacritty\"/{ok=1} ok && /PID:/{print $2; exit}'); cwd=$(readlink \"/proc/$(pgrep -P \"$pid\" 2>/dev/null | head -n1)/cwd\" 2>/dev/null); alacritty --working-directory \"${cwd:-$HOME}\""; }
     Mod+D hotkey-overlay-title="Open launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
     Mod+Period { spawn "noctalia" "msg" "panel-toggle" "launcher" "/emo"; }
     
