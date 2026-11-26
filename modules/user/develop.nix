@@ -33,6 +33,7 @@ in
 
     # AI
     jan
+    claude-code
   ];
 
   home.sessionPath = [
