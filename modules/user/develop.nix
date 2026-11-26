@@ -18,6 +18,8 @@ in
   };
 
   home.packages = with pkgs; [
+    godot
+
     # Go
     gcc
     gopls
